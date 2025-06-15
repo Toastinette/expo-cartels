@@ -127,6 +127,21 @@
         inner.style.height = h + 'px';
       }
 
+  <!-- Script de flip tactile + adaptation de la hauteur -->
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      const link     = card.querySelector('.front-link');
+      const inner    = card.querySelector('.card-inner');
+      const frontImg = card.querySelector('.front-link img');  // <-- MAJ ICI
+
+      let timer, startX;
+
+      // Fixe la hauteur du container au ratio de l'image
+      function fixHeight() {
+        const rect = frontImg.getBoundingClientRect();
+        inner.style.height = rect.height + 'px';
+      }
+
       // Appliquer dès le chargement et au redimensionnement
       frontImg.addEventListener('load', fixHeight);
       window.addEventListener('resize', fixHeight);
@@ -135,7 +150,7 @@
       // Gestion du flip tactile
       card.addEventListener('touchstart', e => {
         startX = e.touches[0].clientX;
-        timer = setTimeout(() => {
+        timer  = setTimeout(() => {
           card.classList.add('ready-swipe');
           link.style.pointerEvents = 'none';
         }, 300);
@@ -162,3 +177,4 @@
   </script>
 </body>
 </html>
+
