@@ -113,12 +113,26 @@
     </a>
   </footer>
 
-  <!-- Script de flip tactile -->
+  <!-- Script de flip tactile + adaptation de la hauteur -->
   <script>
     document.querySelectorAll('.card').forEach(card => {
       const link = card.querySelector('.front-link');
+      const inner = card.querySelector('.card-inner');
+      const frontImg = card.querySelector('.card-front img');
       let timer, startX;
 
+      // Fonction pour fixer la hauteur du container au ratio de l'image
+      function fixHeight() {
+        const h = frontImg.getBoundingClientRect().height;
+        inner.style.height = h + 'px';
+      }
+
+      // Appliquer dès le chargement et au redimensionnement
+      frontImg.addEventListener('load', fixHeight);
+      window.addEventListener('resize', fixHeight);
+      if (frontImg.complete) fixHeight();
+
+      // Gestion du flip tactile
       card.addEventListener('touchstart', e => {
         startX = e.touches[0].clientX;
         timer = setTimeout(() => {
