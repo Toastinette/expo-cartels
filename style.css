@@ -46,3 +46,19 @@ footer .logo {
   margin: 1rem auto;
   opacity: 0.8;
 }
+/* Bento de miniatures */
+.bento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.bento a img {
+  width: 100%;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform .2s;
+}
+.bento a img:hover {
+  transform: scale(1.05);
+}
