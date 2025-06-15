@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Chant des Zoizos</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <h1>Le Chant des Zoizos</h1>
+
+    <!-- Affiche principale, 300px de large max -->
+    <img src="../images/LCDZ-AFFICHE.jpg" alt="Le Chant des Zoizos" style="max-width:300px; width:100%; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+
+    <!-- Texte de présentation -->
+    <p>
+      Studio Bagarre signe une exposition aussi accessible que désobéissante, à la croisée du graphisme pop et de la poésie piquante.
+      Dans un univers coloré, direct, mais toujours sensible, texte et image s’épousent, s’entrechoquent, se répondent — comme les langues et cultures de La Réunion.
+    </p>
+    <p>
+      Inspiré par les codes visuels de Barbara Kruger, OBEY, et du street-art politique, Studio Bagarre détourne avec tendresse et ironie les icônes touristiques, les clichés de carte postale et les images figées de l’île intense.
+      Ici, La Réunion devient un terrain de jeu graphique, une langue visuelle vivante où les mots — souvent en créole, en français ou en chinois — prennent une force d’affiche ou de manifeste.
+    </p>
+    <!-- … colle la suite du texte complet depuis exposition_studio_bagarre.txt … -->
+
+    <!-- Bento : miniatures cliquables -->
+    <div class="bento">
+      <!-- Pour chaque affiche, adapte le slug et l’image correspondante -->
+      <a href="01-zoizo.html"><img src="../images/zoizo.jpg" alt="ZOIZO"></a>
+      <a href="02-pitaya.html"><img src="../images/pitaya.jpg" alt="PITAYA"></a>
+      <a href="03-bouchon.html"><img src="../images/bouchon.jpg" alt="BOUCHON"></a>
+      <!-- … répète pour toutes les affiches … -->
+      <a href="00-le-chant-des-zoizos.html"><img src="../images/LCDZ-AFFICHE.jpg" alt="Le Chant des Zoizos"></a>
+    </div>
+  </main>
+
+  <nav class="nav">
+    <!-- navigation circulaire : précédent renvoie à la dernière, suivant à la première -->
+    <a href="last-page.html">← Précédent</a>
+    <a href="01-zoizo.html">Suivant →</a>
+  </nav>
+
+  <footer>
+    <a href="https://www.instagram.com/studiobagarre/" target="_blank" rel="noopener">
+      <img src="../logo.png" alt="Studio Bagarre" class="logo">
+    </a>
+  </footer>
+</body>
+</html>
