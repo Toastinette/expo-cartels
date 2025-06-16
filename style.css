@@ -52,7 +52,7 @@ footer .logo {
   opacity: 0.8;
 }
 
-/* Bento de miniatures carrées */
+/* Bento : grille 3 colonnes, miniatures réduites */
 .bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,25 +60,12 @@ footer .logo {
   margin-top: 2rem;
 }
 
-/* Chaque lien devient un bloc carré */
-.bento a {
-  position: relative;
-  display: block;
-  width: 100%;
-  padding-bottom: 100%; /* ratio 1:1 => carrés */
-  overflow: hidden;
-}
-
-/* L’image recouvre entièrement sa case, en conservant son ratio */
 .bento a img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  display: block;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .bento a img:hover {
