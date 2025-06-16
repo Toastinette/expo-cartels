@@ -52,7 +52,7 @@ footer .logo {
   opacity: 0.8;
 }
 
-/* Bento : grille 3 colonnes, miniatures réduites */
+/* Bento : 3 colonnes de vignettes, sans cropping */
 .bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -60,10 +60,20 @@ footer .logo {
   margin-top: 2rem;
 }
 
+/* On enlève toute contrainte de hauteur sur le lien */
+.bento a {
+  display: block;
+  width: 100%;
+  /* Pas de padding-bottom ici */
+  overflow: visible; /* ou auto */
+}
+
+/* L’image occupe 100% de la largeur, conserve son ratio, jamais cropée */
 .bento a img {
   width: 100%;
   height: auto;
-  display: block;
+  object-fit: contain;   /* force la conservation du ratio */
+  object-position: center; /* centre si bordures */
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   transition: transform 0.2s;
 }
