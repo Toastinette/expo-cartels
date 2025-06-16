@@ -2,179 +2,110 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Chant des Zoizos</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    /* Override pour conserver le ratio des images */
-    .card-inner {
-      display: inline-block;
-      position: relative;
-      transform-style: preserve-3d;
-      transition: transform 0.6s ease;
-    }
-    .card-inner img {
-      display: block;
-      width: 100%;
-      height: auto;
-      backface-visibility: hidden;
-    }
-    .card-inner .back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: rotateY(180deg);
-    }
-    .card.flipped .card-inner {
-      transform: rotateY(180deg);
-    }
-    /* On garde le grid 3 colonnes */
-    .bento {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.5rem;
-      margin-top: 2rem;
-      justify-items: center;
-    }
-  </style>
 </head>
 <body>
   <main>
     <h1>Le Chant des Zoizos</h1>
 
-    <!-- Affiche principale -->
-    <img src="../images/LCDZ-AFFICHE.jpg"
-         alt="Le Chant des Zoizos"
-         style="max-width:300px;width:100%;box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+    <!-- Affiche principale, 300px de large max -->
+    <img src="../images/LCDZ-AFFICHE.jpg" alt="Le Chant des Zoizos" style="max-width:300px; width:100%; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
 
     <!-- Texte de présentation -->
-    <p><strong>
+    <p><b>
       Studio Bagarre signe une exposition aussi accessible que désobéissante, à la croisée du graphisme pop et de la poésie piquante.
       Dans un univers coloré, direct, mais toujours sensible, texte et image s’épousent, s’entrechoquent, se répondent comme les langues et cultures de La Réunion.
-    </strong></p>
-    <!-- … tes paragraphes suivants … -->
+    </p></b>
+    <p>
+      Inspiré par les codes visuels de Barbara Kruger, OBEY, et du street-art politique, Studio Bagarre détourne avec tendresse et ironie les icônes touristiques, les clichés de carte postale et les images figées de l’île intense.
+      Ici, La Réunion devient un terrain de jeu graphique, une langue visuelle vivante où les mots souvent en créole, en français ou en chinois prennent une force d’affiche ou de manifeste.
+         </p>
+    <p>
+      "La Réunion est un dictionnaire de mots rigolos", affirme l’artiste, qui puise dans cette langue étrangère qui devient sienne pour créer une œuvre qui respire le métissage, le rire, l’impertinence et l’amour discret des détails.
+Doux moukatage, critique tendre, pop tropicalisé :
+Studio Bagarre donne à voir une série d’images chocs et de slogans absurdes, bruts ou faussement naïfs, où s’invite une forme de positivité punk.
+Une exposition qui fait sourire, mais aussi réfléchir.
+         </p>
+    <p>
 
-    <!-- Bento : miniatures retournables -->
+🧠 + 😄 = 💥
+   </p>
+    <p><b>
+Un savant mélange entre affiches, mots, objets détournés et punchlines, qui offre un bol d’air frais graphique… et un shot d’ironie douce pour les temps trop sérieux.
+   </p></b>
+    <p>
+--------------------------
+           </p>
+    <p>                                              
+L’exposition mêle illustrations et textes décalés pour créer un véritable parcours immersif et réparateur.
+Dans ce projet, même le mot zoizo résonne comme une promesse de joie.
+La galerie 5D affirme ici sa volonté de proposer au public un moment de déconnexion salutaire, à travers la couleur, l’humour et la tendresse une bouffée d’air dans une époque saturée d’anxiété.
+Le tout avec une démarche accessible : permettre à chacun de repartir avec une œuvre chez soi, à prix doux.
+         </p>
+    <p>
+S’inspirant des recherches scientifiques sur les bienfaits des chants d’oiseaux reconnus pour leur capacité à apaiser l’esprit et réduire le stress. l’exposition offre un instant suspendu, de joie simple et de magie sonore.
+Elle met aussi à l’honneur le talent local, en présentant un artiste prometteur, dans la lignée des figures comme Pardon, capable de manier l’humour et le graphisme avec justesse et mordant.
+"Le Chant des Zoizos" agit comme une balade mentale, où se réconcilient la tête, le rire, et le sensible.
+Un anti-burn-out tropical, où chaque oeuvre devient un petit thérapeute masqué… et parfaitement stylé.
+    </p>
+    <!-- … colle la suite du texte complet depuis exposition_studio_bagarre.txt … -->
+
+    <!-- Bento : miniatures cliquables -->
     <div class="bento">
-      <!-- exemple de carte -->
-      <div class="card">
-        <div class="card-inner">
-          <!-- FACE AVANT (lien cliquable) -->
-          <a class="front-link" href="avocat.html">
-            <img src="../images/avocat.png" alt="AVOCAT">
-          </a>
-          <!-- DOS -->
-          <img class="back" src="../images/mickey.jpg" alt="Dos de carte">
-        </div>
-      </div>
+      <!-- Pour chaque affiche, adapte le slug et l’image correspondante -->
+<a href="avocat.html"><img src="../images/avocat.png" alt="AVOCAT"></a>
+<a href="banan.html"><img src="../images/banan.png" alt="BANAN"></a>
+<a href="bouchon.html"><img src="../images/bouchon.png" alt="BOUCHON"></a>
+<a href="candyd.html"><img src="../images/candyd.png" alt="CANDYD"></a>
+<a href="couleur.html"><img src="../images/couleur.png" alt="COULEUR"></a>
+<a href="crousti poulet.html"><img src="../images/CROUSTI POULET.png" alt="CROUSTI POULET"></a>
+<a href="day by day.html"><img src="../images/DAY BY DAY.png" alt="DAY BY DAY"></a>
+<a href="don-t-worry-be-happy.html"><img src="../images/dont't worry be happy.png" alt="DON'T WORRY BE HAPPY"></a>
+<a href="doomscrolling.html"><img src="../images/DOOMSCROLING.png" alt="DOOMSCROLLING"></a>
+  <a href="legal-lethal-local.html"><img src="../images/LEGAL LETHAL LOCAL.png" alt="LEGAL LETHAL LOCAL"></a>
 
-      <!-- répète pour chaque affiche : -->
-      <div class="card">
-        <div class="card-inner">
-          <a class="front-link" href="banan.html">
-            <img src="../images/banan.png" alt="BANAN">
-          </a>
-          <img class="back" src="../images/mickey.jpg" alt="Dos de carte">
-        </div>
-      </div>
+<a href="fuck.html"><img src="../images/fuck.png" alt="FUCK"></a>
+<a href="gramoune.html"><img src="../images/gramoune.png" alt="GRAMOUNE"></a>
+<a href="i-want-to-believe.html"><img src="../images/I WANT TO BELIEVE.png" alt="I WANT TO BELIEVE"></a>
+<a href="je-taime.html"><img src="../images/JE TAIME.png" alt="JE T’AIME"></a>
+<a href="kawaii.html"><img src="../images/KAWAI.png" alt="KAWAI"></a>
+<a href="koz-gra.html"><img src="../images/KOZ GRA.png" alt="KOZ GRA"></a>
+<a href="langevin.html"><img src="../images/langevin.png" alt="LANGEVIN"></a>
+<a href="letchi.html"><img src="../images/letchi.png" alt="LETCHI DE SAINT-BENOÎT"></a>
+<a href="mangu.html"><img src="../images/mangu.png" alt="MANGU"></a>
+<a href="palette-m-tisse.html"><img src="../images/PALETTE METISSE.png" alt="PALETTE MÉTISSE"></a>
+<a href="pitaya.html"><img src="../images/pitaya.png" alt="PITAYA"></a>
+<a href="please-sorta-your-waste.html"><img src="../images/PLEASE SORT YOUR WASTE.png" alt="PLEASE SORT YOUR WASTE"></a>
+<a href="reef-waves.html"><img src="../images/REEF WAVES.png" alt="REEF WAVES – MILLEPORA"></a>
+<a href="rose-de-bourbon.html"><img src="../images/ROSE DE BOURBON.png" alt="LA ROSE DE BOURBON"></a>
+<a href="samoussa.html"><img src="../images/samoussa.png" alt="SAMOUSSA"></a>
+<a href="san-giles.html"><img src="../images/SAN GILES.png" alt="SAN GILES – EL DORADO TROPICAL"></a>
+<a href="souvenirs-d-enfance.html"><img src="../images/SOUVENIR D'ENFRANCE.png" alt="SOUVENIRS D’ENFRANCE"></a>
+<a href="tangue.html"><img src="../images/tangue.png" alt="TANGUE CUTE"></a>
+<a href="une-derniere.html"><img src="../images/UNE DERNIERE.png" alt="UNE DER ET J’ME CASSE"></a>
+<a href="wipeout.html"><img src="../images/wipeout.png" alt="WIPEOUT"></a>
+<a href="yohaku.html"><img src="../images/yohaku.png" alt="YOHAKU"></a>
+<a href="yr4.html"><img src="../images/yr4.png" alt="YR4"></a>
+<a href="zamal.html"><img src="../images/zamal.png" alt="ZAMAL"></a>
+<a href="zanana.html"><img src="../images/zanana.png" alt="ZANANA"></a>
+<a href="zoizo.html"><img src="../images/zoizo.png" alt="ZOIZO"></a>
 
-      <div class="card">
-        <div class="card-inner">
-          <a class="front-link" href="bouchon.html">
-            <img src="../images/bouchon.png" alt="BOUCHON">
-          </a>
-          <img class="back" src="../images/mickey.jpg" alt="Dos de carte">
-        </div>
-      </div>
-
-      <!-- … et ainsi de suite pour les 35 cartes … -->
-
-      <div class="card">
-        <div class="card-inner">
-          <a class="front-link" href="zoizo.html">
-            <img src="../images/zoizo.png" alt="ZOIZO">
-          </a>
-          <img class="back" src="../images/mickey.jpg" alt="Dos de carte">
-        </div>
-      </div>
+      <!-- … répète pour toutes les affiches … -->
     </div>
   </main>
 
-  <!-- Navigation circulaire -->
   <nav class="nav">
+    <!-- navigation circulaire : précédent renvoie à la dernière, suivant à la première -->
     <a href="last-page.html">← Précédent</a>
     <a href="01-zoizo.html">Suivant →</a>
   </nav>
 
-  <!-- Footer avec Instagram -->
   <footer>
     <a href="https://www.instagram.com/studiobagarre/" target="_blank" rel="noopener">
       <img src="../logo.png" alt="Studio Bagarre" class="logo">
     </a>
   </footer>
-
-  <!-- Script de flip tactile + adaptation de la hauteur -->
-  <script>
-    document.querySelectorAll('.card').forEach(card => {
-      const link = card.querySelector('.front-link');
-      const inner = card.querySelector('.card-inner');
-      const frontImg = card.querySelector('.card-front img');
-      let timer, startX;
-
-      // Fonction pour fixer la hauteur du container au ratio de l'image
-      function fixHeight() {
-        const h = frontImg.getBoundingClientRect().height;
-        inner.style.height = h + 'px';
-      }
-
-  <!-- Script de flip tactile + adaptation de la hauteur -->
-  <script>
-    document.querySelectorAll('.card').forEach(card => {
-      const link     = card.querySelector('.front-link');
-      const inner    = card.querySelector('.card-inner');
-      const frontImg = card.querySelector('.front-link img');  // <-- MAJ ICI
-
-      let timer, startX;
-
-      // Fixe la hauteur du container au ratio de l'image
-      function fixHeight() {
-        const rect = frontImg.getBoundingClientRect();
-        inner.style.height = rect.height + 'px';
-      }
-
-      // Appliquer dès le chargement et au redimensionnement
-      frontImg.addEventListener('load', fixHeight);
-      window.addEventListener('resize', fixHeight);
-      if (frontImg.complete) fixHeight();
-
-      // Gestion du flip tactile
-      card.addEventListener('touchstart', e => {
-        startX = e.touches[0].clientX;
-        timer  = setTimeout(() => {
-          card.classList.add('ready-swipe');
-          link.style.pointerEvents = 'none';
-        }, 300);
-      });
-
-      card.addEventListener('touchmove', e => {
-        if (!card.classList.contains('ready-swipe')) return;
-        const dx = e.touches[0].clientX - startX;
-        if (Math.abs(dx) > 30) {
-          card.classList.toggle('flipped');
-          card.classList.remove('ready-swipe');
-          clearTimeout(timer);
-        }
-      });
-
-      ['touchend','touchcancel'].forEach(evt =>
-        card.addEventListener(evt, () => {
-          clearTimeout(timer);
-          card.classList.remove('ready-swipe');
-          link.style.pointerEvents = '';
-        })
-      );
-    });
-  </script>
 </body>
 </html>
-
